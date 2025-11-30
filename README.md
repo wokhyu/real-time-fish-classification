@@ -14,7 +14,7 @@
 
 | 👤 Họ và tên      | 🆔 Mã sinh viên     | 🐙 Tên GitHub        | 🛠️ Đóng góp  |
 |------------------|--------------------|----------------------|----------------------|
-| Đặng Hải Bình    | 23001502           | chaotolabin          | Tìm hiểu tổng quan và trực quan hóa bộ dữ liệu |
+| Đặng Hải Bình    | 23001502           | chaotolabin          | Phân chia công việc, Tìm hiểu tổng quan và trực quan hóa bộ dữ liệu |
 |                  |                    |                      |                      |
 | Chu Thị Mai Duyên| 23001510           | maiduyen05           | [Đóng góp 2]         |
 | Đỗ Thị Mây       | 23001536           | sharonmyoui37        | [Đóng góp 3]         |
