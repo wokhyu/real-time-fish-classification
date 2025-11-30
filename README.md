@@ -7,7 +7,7 @@
 * **📅 Ngày nộp:** 30/11/2025
 * **📄 Báo cáo PDF:** 📄 [Liên kết tới báo cáo PDF trong kho lưu trữ này]  
 * **🖥️ Slide thuyết trình:** 🖥️ [Liên kết tới slide thuyết trình trong kho lưu trữ này]  
-* **📂 Kho lưu trữ:** 📁 https://github.com/wokhyu/real-time-fish-classification
+* **📂 Kho lưu trữ:** 📁 https://drive.google.com/drive/folders/10DZXecvxZj9Ys18drgafsNuKt_pSRCJA?usp=drive_link
 * 
 
 **👥 Thành viên nhóm:**
