@@ -1,4 +1,4 @@
-#Thông tin dự án
+# Thông tin dự án
 
 * **📚 Môn học:** MAT3508 – Nhập môn Trí tuệ Nhân tạo 
 * **📅 Học kỳ:** Học kỳ 1, Năm học 2025-2026 
