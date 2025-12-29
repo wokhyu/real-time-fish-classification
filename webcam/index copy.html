@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FishVision AI - Underwater Detective</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-blue-100 min-h-screen flex items-center justify-center">
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden">
+            <div class="p-6 md:p-8">
+                <h1 class="text-3xl font-bold text-blue-800 mb-2">🐟 FishVision AI</h1>
+                <p class="text-blue-600 mb-6">Identify fish species in your images with deep learning</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <button id="imageBtn" class="input-selector bg-blue-100 hover:bg-blue-200 text-blue-800 p-6 rounded-lg transition-all flex flex-col items-center">
+                        <i data-feather="image" class="w-10 h-10 mb-2"></i>
+                        <span class="font-semibold">Upload Image</span>
+                    </button>
+                    <button id="webcamBtn" class="input-selector bg-purple-100 hover:bg-purple-200 text-purple-800 p-6 rounded-lg transition-all flex flex-col items-center">
+                        <i data-feather="camera" class="w-10 h-10 mb-2"></i>
+                        <span class="font-semibold">Use Webcam</span>
+                    </button>
+                </div>
+
+                <!-- IMAGE UPLOAD SECTION -->
+                <div id="imageUpload" class="hidden upload-section">
+                    <div class="border-2 border-dashed border-blue-300 rounded-lg p-8 text-center mb-4">
+                        <input type="file" id="imageInput" accept="image/*" class="hidden">
+                        <label for="imageInput" class="cursor-pointer">
+                            <i data-feather="upload" class="w-12 h-12 mx-auto text-blue-400 mb-3"></i>
+                            <p class="text-blue-600 mb-2 font-medium">Drag & drop your fish image here</p>
+                            <p class="text-sm text-gray-500">or click to browse files (JPG, PNG)</p>
+                        </label>
+                    </div>
+                    <div class="flex justify-center">
+                        <button id="analyzeImageBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed font-medium" disabled>
+                            Analyze Image
+                        </button>
+                    </div>
+                </div>
+
+                <!-- WEBCAM SECTION -->
+                <div id="webcamSection" class="hidden upload-section">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <div class="border-2 border-dashed border-purple-300 rounded-lg overflow-hidden mb-4">
+                            <div id="webcamContainer" class="relative bg-gray-900">
+                                <video id="webcam" autoplay playsinline class="w-full rounded-lg hidden"></video>
+                                <canvas id="webcamOverlay" class="absolute top-0 left-0 w-full h-full hidden pointer-events-none"></canvas>
+                                <div class="flex flex-col items-center justify-center py-20" id="webcamPlaceholder">
+                                    <i data-feather="camera" class="w-16 h-16 text-purple-400 mb-4"></i>
+                                    <p class="text-purple-600 text-lg font-semibold mb-2">Real-time Fish Detection</p>
+                                    <p class="text-gray-500 text-sm">Click "Start Real-time" to begin</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button id="startWebcamBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center gap-2">
+                                <i data-feather="play" class="w-5 h-5"></i>
+                                <span>Start Real-time</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RESULTS SECTION -->
+                <div id="resultsSection" class="hidden mt-8">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Analysis Results</h2>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-medium text-gray-700 mb-2">Input Preview</h3>
+                            <div id="inputPreview" class="border rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center" style="min-height: 200px;">
+                                <p class="text-gray-500">Preview will appear here</p>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-medium text-gray-700 mb-2">Analysis Output</h3>
+                            <div id="outputPreview" class="border rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center" style="min-height: 200px;">
+                                <p class="text-gray-500">Results will appear here</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="imageResults" class="mt-6 hidden">
+                        <h3 class="text-xl font-semibold text-blue-700 mb-3">Identified Fish Species</h3>
+                        <div id="speciesInfo" class="bg-blue-50 rounded-lg p-4"></div>
+                    </div>
+
+                    <div class="mt-6 flex justify-end">
+                        <button id="downloadBtn" class="bg-gray-800 hover:bg-gray-900 text-white px-6 py-2 rounded-lg flex items-center gap-2 hidden">
+                            <i data-feather="download" class="w-4 h-4"></i>
+                            <span>Download Results</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
