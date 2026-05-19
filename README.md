@@ -17,7 +17,7 @@
 | Đặng Hải Bình    | 23001502           | chaotolabin          | Phân chia công việc<br>Tìm hiểu tổng quan và trực quan hóa bộ dữ liệu<br>Hoàn thiện, chỉnh sửa báo cáo và slide |
 | Chu Thị Mai Duyên| 23001510           | maiduyen05           | Tìm hiểu, xây dựng và huấn luyện mạng nơ-ron tích chập (CNN)<br>Hoàn thiện, chỉnh sửa báo cáo và slide        |
 | Đỗ Thị Mây       | 23001536           | sharonmyoui37        | Nghiên cứu, xây dựng và huấn luyện mô hình YOLO<br>Hoàn thiện, chỉnh sửa báo cáo và slide         |
-| Nguyễn Trọng Đức | 23001961           | rognduck             | Ứng dụng OpenCV và xây dựng chức năng liên kết kết quả tìm kiếm<br>Hoàn thiện, chỉnh sửa báo cáo và slide            |
+| Nguyễn Trọng Đức | 23001961           | trognduck             | Ứng dụng OpenCV và xây dựng chức năng liên kết kết quả tìm kiếm<br>Hoàn thiện, chỉnh sửa báo cáo và slide            |
 | Nguyễn Quốc Hiệu | 23001520           | wokhyu               | Nghiên cứu, xây dựng và huấn luyện mô hình YOLO<br>Hoàn thiện, chỉnh sửa báo cáo và slide         |
 
 ---
